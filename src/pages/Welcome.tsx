@@ -11,8 +11,8 @@ import {
 } from 'react-native'
 
 import { Feather } from '@expo/vector-icons'
-import colors from '../styles/colors'
 import wateringImg from '../assets/watering.png'
+import colors from '../styles/colors'
 import fonts from '../styles/fonts'
 
 export function Welcome () {
@@ -38,7 +38,6 @@ export function Welcome () {
             Nós cuidamos de lembrar você sempre que precisar.
           </Text>
 
-        
           <TouchableOpacity 
             style={styles.buttonHome}
             activeOpacity={0.7}
