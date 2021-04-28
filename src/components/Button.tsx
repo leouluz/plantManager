@@ -7,10 +7,10 @@ interface ButtonProps extends TouchableOpacityProps{
 
 import colors from '../styles/colors'
 
-export function Button({title, ...rest} : ButtonProps){
+export function ButtonHome({title, ...rest} : ButtonProps){
   return (
     <TouchableOpacity 
-    style={styles.button}
+    style={styles.buttonHome}
     activeOpacity={0.7}
     {...rest}
   >
@@ -30,6 +30,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     height:56,
     paddingHorizontal:10
+  },
+  buttonHome:{
+    backgroundColor: colors.green,
+    justifyContent:'center',
+    alignItems: 'center',
+    borderRadius: 16,
+    marginBottom: 10,
+    height:56,
+    width:56,
   },
   textButton:{
     color:colors.white,
