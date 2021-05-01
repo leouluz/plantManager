@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigation } from '@react-navigation/core'
 import {
   Text, 
   Image, 
@@ -17,6 +18,11 @@ import fonts from '../styles/fonts'
 
 export function Welcome () {
 
+  const navigation = useNavigation();
+
+  function handleStart(){
+    navigation.navigate('UserIndentification')
+  }
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.wrapper}>
@@ -45,6 +51,7 @@ export function Welcome () {
               <Feather 
                 name="chevron-right" 
                 style={styles.buttonIcon}
+                onPress={handleStart}
               />
           </TouchableOpacity>
         </View>
