@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Welcome} from './src/pages/Welcome'
 import {UserIndentification} from './src/pages/UserIndentification'
+import { Confirmation } from './src/pages/Confirmation';
 import AppLoader from 'expo-app-loading'
 import { 
   useFonts,
@@ -22,7 +23,7 @@ export default function App() {
   }
 
   return (
-    <UserIndentification /> 
+    <Confirmation /> 
   );
 }
 
